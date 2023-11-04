@@ -1,5 +1,5 @@
 #! python3.7
-
+#libraries
 import argparse
 import io
 import os
@@ -13,8 +13,9 @@ from tempfile import NamedTemporaryFile
 from time import sleep
 from sys import platform
 
-
+#esta funcion se ejecurtara cuando se inicie el prorama 
 def main():
+    #analizador de argumentos
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="medium", help="Model to use",
                         choices=["tiny", "base", "small", "medium", "large"])
